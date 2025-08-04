@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kenya Sign Language Registration</title>
+</head>
+<body>
+
+  <header>
+    <h1>Kenya Sign Language (KSL) Portal</h1>
+    <p>Register to learn, teach, or support Kenya Sign Language initiatives.</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Why Learn Kenya Sign Language?</h2>
+      <ol type="a">
+        <li>Promotes inclusion and accessibility</li>
+        <li>Improves communication with the Deaf community</li>
+        <li>Enhances career opportunities in interpretation and education</li>
+      </ol>
+    </section>
+
+    
+    <section>
+      <h2>Participation Roles</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Role</th>
+            <th>Description</th>
+            <th>Commitment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Learner</td>
+            <td>Interested in learning basic to advanced KSL</td>
+            <td>1–4 hours/week</td>
+          </tr>
+          <tr>
+            <td>Interpreter</td>
+            <td>Certified KSL interpreter for schools or events</td>
+            <td>Variable</td>
+          </tr>
+          <tr>
+            <td>Advocate</td>
+            <td>Promotes Deaf rights and accessibility</td>
+            <td>Flexible</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Key Terms</h2>
+      <dl>
+        <dt>KSL</dt>
+        <dd>Kenya Sign Language — the language used by the Kenyan Deaf community.</dd>
+        <dt>Interpreter</dt>
+        <dd>A professional who translates spoken language into KSL and vice versa.</dd>
+        <dt>Deaf Culture</dt>
+        <dd>The values, norms, and identity of the Deaf community.</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Introduction to KSL</h2>
+      <img src="Assets/Sign Language.jpg" alt="An image showing Kenya Sign Language in use" width="320" height="240">
+
+        
+      <h2>Introduction to KSL</h2>
+      <video width="320" height="240" muted controls>
+        <source src="Assets/Sign Language Video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <h2>KSL Alphabet Audio Guide</h2>
+      <audio controls>
+        <source src="Assets/Gospel-Songs-Dear-God.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+      <h2>KSL Program Registration</h2>
+      <form action="/submit-ksl" method="post" autocomplete="on">
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Please enter your name" required><br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Please enter your email" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+2547XXXXXXX" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="role">Your Role:</label>
+        <select id="role" name="role" required>
+          <option value="">--Select--</option>
+          <option value="learner">Learner</option>
+          <option value="interpreter">Interpreter</option>
+          <option value="advocate">Advocate</option>
+        </select><br><br>
+
+        <label for="experience">KSL Experience:</label>
+        <textarea id="experience" name="experience" rows="4" placeholder="Describe your experience or interest in KSL..."></textarea><br><br>
+
+        <label for="county">County:</label>
+        <select id="county" name="county" required>
+          <option value="">--Select your county--</option>
+          <option value="nairobi">Nairobi</option>
+          <option value="kisumu">Kisumu</option>
+          <option value="mombasa">Mombasa</option>
+          <option value="eldoret">Uasin Gishu</option>
+          <option value="nakuru">Nakuru</option>
+        </select><br><br>
+
+        <label for="referrer">How did you hear about us?</label>
+        <input type="text" id="referrer" name="referrer" placeholder="e.g. Social Media, Friend"><br><br>
+
+        <fieldset>
+          <legend>Preferred Communication Method:</legend>
+          <input type="radio" id="contact-email" name="contact" value="email" required>
+          <label for="contact-email">Email</label><br>
+          <input type="radio" id="contact-phone" name="contact" value="phone">
+          <label for="contact-phone">Phone</label>
+        </fieldset><br><br>
+
+        <fieldset>
+          <legend>Topics of Interest:</legend>
+          <input type="checkbox" id="basic-signs" name="topics" value="basic-signs">
+          <label for="basic-signs">Basic Signs</label><br>
+          <input type="checkbox" id="interpreting" name="topics" value="interpreting">
+          <label for="interpreting">KSL Interpreting</label><br>
+          <input type="checkbox" id="deaf-rights" name="topics" value="deaf-rights">
+          <label for="deaf-rights">Deaf Rights & Advocacy</label>
+        </fieldset><br><br>
+        
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kenya Sign Language Initiative</p>
+  </footer>
+
+</body>
+</html>
